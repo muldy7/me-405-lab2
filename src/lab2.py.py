@@ -15,7 +15,9 @@ t_4 = pyb.Timer(4, freq = 1000)
 # pyb.Timer.ENC_AB(t_4)  # start the timer from the timer value
 # tch1 = t.channel(pyb.Timer.A, pin=pinPB6)  # create the timer channels for each motor pin
 # tch2 = t.channel(pyb.Timer.B, pin=pinPB7)
-enc_channel = t_4.channel(1, pyb.Timer.ENC_AB)
+enc_channel_1 = t_4.channel(pin=pinPB6, pyb.Timer.ENC_AB)
+enc_channel_2 = t_4.channel(pin=pinPB7, pyb.Timer.ENC_AB)
+
 
 
 while True:
